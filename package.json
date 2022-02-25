@@ -1,0 +1,25 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "[![hello, alex!!!](https://github.com/HAMMER17/test/actions/workflows/hello.yml/badge.svg)](https://github.com/HAMMER17/test/actions/workflows/hello.yml)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HAMMER17/test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HAMMER17/test/issues"
+  },
+  "homepage": "https://github.com/HAMMER17/test#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  }
+}
