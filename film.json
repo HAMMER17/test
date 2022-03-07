@@ -1,14 +1,26 @@
 [
     {
-        "original": "the lion king",
-        "russian": "Король Лев",
+        "original_name": "the lion king",
+        "russian_name": "Король Лев",
         "year": "1994",
         "actors": "Вася"
     },
     {
-        "original": "hitmen",
-        "russian": "Хитмен",
+        "original_name": "hitmen",
+        "russian_name": "Хитмен",
         "year": "1994",
         "actors": "Федя"
+    },
+    {
+        "russian_name": "taxi",
+        "year": "2000",
+        "original_name": "taxi",
+        "actors": "json"
+    },
+    {
+        "russian_name": "Бриллиантовая рука",
+        "year": "1970",
+        "original_name": "Бриллиантовая рука",
+        "actors": "Никулин, Миронов, Папанов"
     }
-, {"russian_name":"taxi","year":"2000","original_name":"taxi","actors":"json"}]
+]

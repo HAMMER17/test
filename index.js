@@ -2,6 +2,7 @@ let fs = require('fs');
 let express = require('express');
 let bodyParser = require('body-parser');
 
+// deepcode ignore UseCsurfForExpress: <please specify a reason of ignoring this>, deepcode ignore DisablePoweredBy: <please specify a reason of ignoring this>
 let app = express();
 let urlencodeParser = bodyParser.urlencoded({ extended: false });
 
@@ -12,6 +13,7 @@ app.use('/public', express.static('public'));
 let file = fs.readFileSync('film.json', 'utf8');
 let jsObjectFilms = JSON.parse(file);
 //Форма
+// deepcode ignore NoRateLimitingForExpensiveWebOperation: <please specify a reason of ignoring this>
 app.post('/add', urlencodeParser, function (req, res) {
     if (!req.body) return res.sendStatus(400);
     console.log(req.body);
@@ -27,10 +29,12 @@ app.post('/add', urlencodeParser, function (req, res) {
 //Сервер
 app.listen(3000);
 
+// deepcode ignore NoRateLimitingForExpensiveWebOperation: <please specify a reason of ignoring this>
 app.get('/', function (req, res) {
     res.render('add');
 });
 
+// deepcode ignore NoRateLimitingForExpensiveWebOperation: <please specify a reason of ignoring this>, deepcode ignore NoRateLimitingForExpensiveWebOperation: <please specify a reason of ignoring this>
 app.get('/:name', function (req, res) {
     if (req.params.name === 'add') {
         res.render('add');
